@@ -10,7 +10,7 @@ int main() {
         boost::asio::io_context io_context;
 
         // Create an acceptor to listen on port 12345
-        size_t port = 12345;
+        size_t port = 2525;
         tcp::acceptor acceptor(io_context, tcp::endpoint(tcp::v4(), port));
 
         std::cout << "Server is running on port " << port << ", waiting for connection..." << std::endl;
